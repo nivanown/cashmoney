@@ -577,6 +577,10 @@
   margin: 0;
   }
 
+.contacts-section p a {
+  color: var(--secondary-text-color);
+  }
+
 /* footer */
 .footer {
   padding: 32px 0 40px;
