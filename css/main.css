@@ -48,6 +48,11 @@
   line-height: 22px;
   }
 
+/* menu-btn */
+.menu-btn {
+  display: none;
+  }
+
 /* application-section */
 .application-section {
   position: relative;
