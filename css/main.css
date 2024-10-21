@@ -480,7 +480,7 @@
   }
 
 .advantages__img img {
-  width: 100%;
+  max-width: inherit;
   height: 100%;
   }
 
