@@ -247,6 +247,10 @@ input.gl-filter__result {
   border-radius: 0;
   }
 
+input.gl-filter__result:focus {
+  background: none;
+  }
+
 .gl-filter__text {
   display: block;
   font-size: 32px;
