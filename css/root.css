@@ -1,0 +1,31 @@
+/* root */
+:root {
+
+  /* text color */
+  --primary-text-color: #333333;
+  --secondary-text-color: #666666;
+  --tertiary-text-color: #3870D4;
+  --quaternary-text-color: #444444;
+  --fifth-text-color: #ffffff;
+
+  /* font-family */
+  --primary-font-family: 'Manrope', sans-serif;
+  --secondary-font-family: 'Gilroy', sans-serif;
+
+  /* font-weight */
+  --primary-font-weight: 400;
+  --secondary-font-weight: 500;
+  --tertiary-font-weight: 600;
+  --quaternary-font-weight: 700;
+  --fifth-font-weight: 800;
+
+  /* border-color */
+  --primary-border-color: #DBDBDB;
+  --secondary-border-color: #DCDFE3;
+
+  /* background-color */
+  --primary-background-color: #F5F5F5;
+  --secondary-background-color: #fff;
+  --tertiary-background-color: #3870D4;
+  --quaternary-background-color: #EFF1F5;
+  }
