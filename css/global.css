@@ -4,7 +4,7 @@
 @font-face {
   font-family: 'Gilroy';
   src: url('../fonts/Gilroy-Extrabold.eot');
-  src: local('Cera Pro Light'), local('Gilroy-Extrabold'),
+  src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
       url('../fonts/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
       url('../fonts/Gilroy-Extrabold.woff2') format('woff2'),
       url('../fonts/Gilroy-Extrabold.woff') format('woff'),
