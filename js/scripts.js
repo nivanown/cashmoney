@@ -160,6 +160,24 @@ accordions.forEach(accordion => {
     });
 });
 
+/*- account-tabs -*/
+document.querySelectorAll('.account-tabs').forEach(widget => {
+    const accountTabs = widget.querySelectorAll('.account-tabs__nav li');
+    const accountContents = widget.querySelectorAll('.account-tabs__item');
+
+    accountTabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+            // Удаляем класс active со всех табов и контента в этом виджете
+            accountTabs.forEach(t => t.classList.remove('active'));
+            accountContents.forEach(content => content.classList.remove('active'));
+
+            // Добавляем класс active к текущему табу и соответствующему контенту
+            tab.classList.add('active');
+            accountContents[index].classList.add('active');
+        });
+    });
+});
+
 /*- mobile menu -*/
 const headerCol = document.querySelector('.header__col');
 const menuBtn = document.querySelector('.menu-btn');
