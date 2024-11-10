@@ -729,8 +729,9 @@
 /* applications-content__info-list */
 .applications-content__info-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0 30px;
+  gap: 20px 30px;
   }
 
 .applications-content__info-list dl {
@@ -976,6 +977,8 @@
 
 .profile__list dd {
   color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 24px;
   }
 
 .profile__list dd a {

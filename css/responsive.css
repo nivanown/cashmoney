@@ -163,6 +163,94 @@
   max-width: 100%;
   }
 
+.account-tabs__nav ul {
+  gap: 0 10px;
+  }
+
+.account-tabs__nav li {
+  gap: 0 10px;
+  font-size: 16px;
+  line-height: 20px;
+  }
+
+.account-tabs__icon {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  }
+
+.applications__result {
+  font-size: 16px;
+  line-height: 24px;
+  }
+
+.applications-content {
+  padding: 30px;
+  border-radius: 20px;
+  }
+
+.applications-content__top-col {
+  gap: 20px 20px;
+  }
+
+.person-panel {
+  gap: 20px 20px;
+  }
+
+.profile {
+  padding: 30px;
+  border-radius: 20px;
+  }
+
+.profile__title {
+  font-size: 30px;
+  line-height: 38px;
+  }
+
+.events__item {
+  padding: 30px;
+  border-radius: 20px;
+  }
+
+.events__text {
+  font-size: 22px;
+  line-height: 28px;
+  }
+
+.services__description {
+  padding: 30px 0;
+  }
+
+.services__description p {
+  font-size: 16px;
+  line-height: 26px;
+  }
+
+.services-widget {
+  padding: 50px 30px;
+  border-radius: 20px;
+  }
+
+.account-info {
+  padding: 30px;
+  border-radius: 20px;
+  }
+
+.account-info__title {
+  font-size: 30px;
+  line-height: 38px;
+  }
+
+.account-info p {
+  font-size: 16px;
+  line-height: 26px;
+  }
+
+.services-widget p {
+  font-size: 16px;
+  line-height: 26px;
+  }
+
 }
 
 /* 1023 */
@@ -268,6 +356,23 @@ input.gl-filter__result {
   line-height: 16px;
   } 
 
+.services__item {
+  flex-direction: column;
+  gap: 50px 0;
+  }
+
+.services-widget {
+  width: 100%;
+  }
+
+.services__description {
+  padding: 0;
+  }
+
+.events {
+  gap: 20px 0;
+  }
+
 }
 
 /* 870 */
@@ -338,6 +443,33 @@ input.gl-filter__result {
 .advantages__text {
   font-size: 16px;
   line-height: 20px;
+  }
+
+.account-tabs__nav {
+  margin: 0 -15px 30px;
+  }
+
+.account-tabs__nav ul {
+  gap: 0 30px;
+  padding: 0 15px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  }
+
+.account-tabs__nav li {
+  flex-shrink: 0;
+  white-space: nowrap;
+  }
+
+.applications-content__list > dl {
+  flex-direction: column;
+  gap: 20px 0;
+  }
+
+.applications-content__btns-col {
+  gap: 30px 30px;
   }
 
 }
@@ -739,6 +871,22 @@ input.gl-filter__result {
   z-index: 5;
   }
 
+.applications-content__btns-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  }
+
+.applications-content__btns-col .btn:nth-child(1),
+.applications-content__btns-col .btn:nth-child(2),
+.applications-content__btns-col .btn:nth-child(3) {
+  grid-column: inherit;
+  }
+
+.profile__list {
+  grid-template-columns: repeat(1, 1fr);
+  }
+
 }
 
 /* 620 */
@@ -770,6 +918,24 @@ input.gl-filter__result {
   line-height: 28px;
   }
 
+.services-widget {
+  padding: 30px;
+  }
+
+.services-widget__price {
+  font-size: 40px;
+  line-height: 48px;
+  }
+
+.services__item {
+  gap: 30px 0;
+  }
+
+.services__title {
+  font-size: 30px;
+  line-height: 38px;
+  }
+
 .footer {
   padding: 16px 0 26px;
   }
@@ -778,6 +944,10 @@ input.gl-filter__result {
 
 /* 367 */
 @media (max-width: 367px) {
+
+.applications-content {
+  padding: 20px;
+  }
 
 .application-section__description {
   margin: 0 0 30px;
@@ -805,6 +975,114 @@ input.gl-filter__result {
 .email__text {
   font-size: 20px;
   line-height: 24px;
+  }
+
+.applications-content__number {
+  font-size: 14px;
+  }
+
+.application-status {
+  font-size: 14px;
+  } 
+
+.applications-content__info-list {
+  gap: 15px 20px;
+  }
+
+.applications-content__info-list dl {
+  font-size: 14px;
+  }
+
+.person-panel__name {
+  font-size: 14px;
+  }
+  
+.person-panel__card-number {
+  font-size: 14px;
+  }
+
+.cancel-link {
+  font-size: 14px;
+  }
+
+.payment-status {
+  gap: 15px 0;
+  }
+
+.payment-status__date {
+  font-size: 14px;
+  } 
+
+.payment-status__purpose {
+  font-size: 14px;
+  }
+
+.payment-status__paid {
+  font-size: 14px;
+  }
+
+.payment-status__refund {
+  font-size: 14px;
+  }
+
+.applications-content__list-links li {
+  font-size: 14px;
+  }
+
+.btn {
+  padding: 17px 25px;
+  }
+
+.views {
+  font-size: 14px;
+  }
+
+.profile {
+  padding: 20px;
+  gap: 20px 0;
+  }
+
+.profile__item {
+  padding: 0 0 20px;
+  }
+
+.profile__title {
+  margin: 0 0 20px;
+  font-size: 24px;
+  line-height: 32px;
+  }
+
+.profile__list {
+  gap: 20px 0;
+  }
+
+.events__item {
+  padding: 20px;
+  gap: 15px 0;
+  }
+
+.events__text {
+  font-size: 18px;
+  line-height: 24px;
+  }
+
+.events__date {
+  font-size: 14px;
+  line-height: 20px;
+  }
+
+.services-widget {
+  padding: 20px;
+  }
+
+.account-info {
+  padding: 20px;
+  }
+
+.account-info__title {
+  margin: 0 0 15px;
+  font-size: 26px;
+  line-height: 32px;
   }
 
 }
