@@ -143,7 +143,7 @@ input[type='password']::-webkit-input-placeholder {
   color: var(--fifth-text-color);
   transform: scale(1.02);
   box-shadow: 0 0 0 1px #21a7e5,
-              0 0 16px 0 rgba(0, 0, 0, 0.3);
+              8px 8px 16px 0 rgba(0, 0, 0, 0.3);
   }
 
 .btn:after {
@@ -178,7 +178,7 @@ input[type='password']::-webkit-input-placeholder {
 .btn_color-gray:hover {
   color: var(--primary-text-color);
   box-shadow: 0 0 0 1px var(--tertiary-background-color),
-              0 0 16px 0 rgba(0, 0, 0, 0.1);
+              8px 8px 16px 0 rgba(0, 0, 0, 0.1);
   }
 
 .btn_color-gray:after {
