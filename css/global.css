@@ -198,6 +198,48 @@ input[type='password']::-webkit-input-placeholder {
   content: "";
   }
 
+.btn_telegram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+  background: #21a7e5;
+  }
+
+.btn_telegram:before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icons/telegram.svg) center no-repeat;
+  background-size: 100%;
+  content: "";
+  }
+
+.btn_telegram:hover:after {
+  display: none;
+  }
+
+.btn_whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+  background: #27d045;
+  }
+
+.btn_whatsapp:hover:after {
+  display: none;
+  }
+
+.btn_whatsapp:before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icons/whatsapp.svg) center no-repeat;
+  background-size: 100%;
+  content: "";
+  }
+
 /* title */
 .title {
   margin: 0 0 40px;

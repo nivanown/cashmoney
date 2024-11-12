@@ -173,12 +173,6 @@
   line-height: 20px;
   }
 
-.account-tabs__icon {
-  padding: 10px;
-  width: 50px;
-  height: 50px;
-  }
-
 .applications__result {
   font-size: 16px;
   line-height: 24px;
@@ -217,10 +211,6 @@
   line-height: 28px;
   }
 
-.services__description {
-  padding: 30px 0;
-  }
-
 .services__description p {
   font-size: 16px;
   line-height: 26px;
@@ -249,6 +239,10 @@
 .services-widget p {
   font-size: 16px;
   line-height: 26px;
+  }
+
+.account-tabs__nav ul {
+  padding: 0;
   }
 
 }
@@ -356,7 +350,7 @@ input.gl-filter__result {
   line-height: 16px;
   } 
 
-.services__item {
+.services__top-col {
   flex-direction: column;
   gap: 50px 0;
   }
@@ -365,12 +359,16 @@ input.gl-filter__result {
   width: 100%;
   }
 
-.services__description {
-  padding: 0;
-  }
-
 .events {
   gap: 20px 0;
+  }
+
+.rating {
+  width: 100%;
+  }
+
+.loan-options {
+  grid-template-columns: repeat(1, 1fr);
   }
 
 }
@@ -445,22 +443,8 @@ input.gl-filter__result {
   line-height: 20px;
   }
 
-.account-tabs__nav {
-  margin: 0 -15px 30px;
-  }
-
 .account-tabs__nav ul {
-  gap: 0 30px;
-  padding: 0 15px;
-  overflow-x: scroll;
-  white-space: nowrap;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  }
-
-.account-tabs__nav li {
-  flex-shrink: 0;
-  white-space: nowrap;
+  gap: 0 10px;
   }
 
 .applications-content__list > dl {
@@ -753,6 +737,17 @@ input.gl-filter__result {
   width: 100%;
   }
 
+.account-tabs__icon {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  }
+
+.account-tabs__text {
+  font-size: 16px;
+  line-height: 20px;
+  }
+
 .accordion__item {
   padding: 16px 8px;
   border-radius: 16px;
@@ -938,6 +933,61 @@ input.gl-filter__result {
 
 .footer {
   padding: 16px 0 26px;
+  }
+
+}
+
+/* 580 */
+@media (max-width: 580px) {
+
+.account-tabs__icon {
+  margin-bottom: 5px;
+  padding: 7px;
+  width: 40px;
+  height: 40px;
+  }
+
+.account-tabs__text {
+  font-size: 12px;
+  line-height: 20px;
+  }
+
+.services .btn {
+  width: 100%;
+  }
+
+}
+
+/* 390 */
+@media (max-width: 390px) {
+
+.account-tabs__icon {
+  width: 36px;
+  height: 36px;
+  }
+
+.account-tabs__text {
+  font-size: 9px;
+  line-height: 18px;
+  }
+
+.loan-options {
+  gap: 20px 0;
+  }
+
+.loan-options__item {
+  padding: 30px 20px;
+  border-radius: 20px;
+  }
+
+.rating__title {
+  font-size: 34px;
+  line-height: 38px;
+  }
+
+.messengers__title {
+  font-size: 34px;
+  line-height: 38px;
   }
 
 }
