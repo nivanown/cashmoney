@@ -1096,8 +1096,15 @@
   line-height: 30px;
   }
 
-.services-widget p {
+.services__text {
+  display: flex;
+  flex-direction: column;
   margin: 0 0 20px;
+  gap: 5px 0;
+  }
+
+.services-widget p {
+  margin: 0;
   font-size: 18px;
   line-height: 27px;
   }
@@ -1237,14 +1244,12 @@
   margin: 0 0 70px;
   }
 
-.messengers__title {
-  margin: 0 0 30px;
-  font-size: 40px;
-  font-family: var(--secondary-font-family);
-  font-weight: var(--fifth-font-weight);
-  text-transform: uppercase;
+.messengers .services__title {
   text-align: center;
-  line-height: 48px;
+  }
+
+.messengers p {
+  text-align: center;
   }
 
 .messengers__col {
@@ -1255,12 +1260,26 @@
   gap: 20px 30px;
   }
 
+/* loan-options-wrap */
+.loan-options-wrap {
+  margin: 0 0 50px;
+  }
+
+.services__title {
+  margin: 0 0 10px;
+  text-align: center;
+  }
+
+.loan-options-wrap p {
+  margin: 0 0 30px;
+  text-align: center;
+  }
+
 /* loan-options */
 .loan-options {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px 30px;
-  margin: 0 0 50px;
   }
 
 .loan-options__item {

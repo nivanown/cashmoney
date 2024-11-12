@@ -956,6 +956,10 @@ input.gl-filter__result {
   width: 100%;
   }
 
+.messengers .services__title br {
+  display: none;
+  }
+
 }
 
 /* 390 */
