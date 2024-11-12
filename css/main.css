@@ -1289,6 +1289,12 @@
   padding: 50px 30px;
   background: var(--secondary-background-color);
   border-radius: 30px;
+  transition: .3s box-shadow;
+  }
+
+.loan-options__item:hover {
+  box-shadow: 0 0 0 1px var(--tertiary-background-color),
+              0 0 16px 0 rgba(0, 0, 0, 0.1);
   }
 
 .loan-options__logo {
