@@ -1170,8 +1170,16 @@
   line-height: 30px;
   }
 
+.rating__small-title.bad {
+  color: #ff0000;
+  }
+
 .rating__small-title.satisfactory {
   color: #ffa500;
+  }
+
+.rating__small-title.excellent {
+  color: #46a440;
   }
 
 .rating p {
@@ -1191,10 +1199,21 @@
   width: 28px;
   height: 28px;
   top: 50%;
-  left: 50%;
+  left: 0;
   background: #fff;
   border-radius: 100%;
+  }
+
+.chart__line-pointer.bad {
+  box-shadow: 0 0 0 5px #ff0000 inset;
+  }
+
+.chart__line-pointer.satisfactory {
   box-shadow: 0 0 0 5px #ffa500 inset;
+  }
+
+.chart__line-pointer.excellent {
+  box-shadow: 0 0 0 5px #46a440 inset;
   }
 
 .chart__line-in {
