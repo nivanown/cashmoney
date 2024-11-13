@@ -233,6 +233,7 @@
   background: rgb(56,112,212);
   background: linear-gradient(90deg, rgba(56,112,212,1) 0%, rgba(96,150,245,1) 100%);
   border-radius: 100%;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.1);
   }
 
 .steps__number:after {
@@ -342,6 +343,7 @@
   padding: 25px 43px 24px;
   background: var(--quaternary-background-color);
   border-radius: 16px;
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.03);
   transition: .3s transform;
   }
 
@@ -473,6 +475,7 @@
   background: rgb(95,148,244);
   background: linear-gradient(-124deg, rgba(95,148,244,1) 40%, rgba(210,226,255,1) 100%);
   border-radius: 24px;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.1);
   }
 
 .advantages__img {
@@ -535,6 +538,7 @@
   height: 64px;
   background: var(--secondary-background-color);
   border-radius: 100%;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.1);
   }
 
 .email__icon img {
@@ -616,6 +620,7 @@
   background: var(--secondary-background-color);
   border-radius: 100%;
   transition: .3s background;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.1);
   }
 
 .account-tabs__nav li:hover .account-tabs__icon,
@@ -685,6 +690,7 @@
   gap: 30px 0;
   background: var(--secondary-background-color);
   border-radius: 30px;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.05);
   }
 
 /* applications-content__top-col */
@@ -951,6 +957,7 @@
   gap: 30px 0;
   background: var(--secondary-background-color);
   border-radius: 30px;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.05);
   }
 
 .profile__item {
@@ -1003,6 +1010,7 @@
   gap: 30px 0;
   background: var(--secondary-background-color);
   border-radius: 30px;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.05);
   }
 
 .account-info__title {
@@ -1037,6 +1045,7 @@
   gap: 20px 0;
   background: var(--secondary-background-color);
   border-radius: 30px;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.05);
   }
 
 .events__text {
@@ -1076,6 +1085,7 @@
   text-align: center;
   background: var(--secondary-background-color);
   border-radius: 30px;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.05);
   }
 
 .services-widget__price {
@@ -1191,6 +1201,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 0 20px;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
   }
 
 .chart__line-in div {
@@ -1283,18 +1295,34 @@
   }
 
 .loan-options__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px 30px;
   background: var(--secondary-background-color);
   border-radius: 30px;
-  transition: .3s box-shadow;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.05);
   }
 
-.loan-options__item:hover {
-  box-shadow: 0 0 0 1px var(--tertiary-background-color),
-              8px 8px 16px 0 rgba(0, 0, 0, 0.1);
+.loan-options__item:before {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 0 1px var(--tertiary-background-color);
+  opacity: 0;
+  z-index: 1;
+  content: "";
+  transition: .3s opacity;
+  pointer-events: none;
+  }
+
+.loan-options__item:hover:before {
+  opacity: 1;
   }
 
 .loan-options__logo {
