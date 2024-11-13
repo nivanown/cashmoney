@@ -178,6 +178,47 @@ document.querySelectorAll('.account-tabs').forEach(widget => {
     });
 });
 
+/*- chart -*/
+const clientRateElement = document.querySelector('.chart__client-rate');
+const pointerElement = document.querySelector('.chart__line-pointer');
+const smallTitleElement = document.querySelector('.rating__small-title');
+
+// Функция обновления позиции указателя, классов и текста в заголовке
+function updatePointerPosition() {
+    // Считываем значение рейтинга клиента
+    const clientRate = parseInt(clientRateElement.textContent, 10);
+    const maxRate = 999; // Максимальное значение рейтинга
+    const positionPercent = (clientRate / maxRate) * 100; // Вычисляем позицию в процентах
+
+    // Устанавливаем позицию указателя
+    pointerElement.style.left = positionPercent + '%';
+
+    // Удаляем все классы у указателя и заголовка "Средний рейтинг"
+    pointerElement.classList.remove('bad', 'satisfactory', 'excellent');
+    smallTitleElement.classList.remove('bad', 'satisfactory', 'excellent');
+
+    // Добавляем классы и текст в зависимости от позиции
+    if (positionPercent <= 33.33) {
+        pointerElement.classList.add('bad'); // Добавляем класс "bad" для позиции от 0 до 33.33%
+        smallTitleElement.classList.add('bad'); // Добавляем такой же класс заголовку
+        smallTitleElement.textContent = "Низкий рейтинг"; // Устанавливаем текст для "bad"
+    } else if (positionPercent <= 66.66) {
+        pointerElement.classList.add('satisfactory'); // Добавляем класс "satisfactory" для позиции от 33.33% до 66.66%
+        smallTitleElement.classList.add('satisfactory'); // Добавляем такой же класс заголовку
+        smallTitleElement.textContent = "Средний рейтинг"; // Устанавливаем текст для "satisfactory"
+    } else {
+        pointerElement.classList.add('excellent'); // Добавляем класс "excellent" для позиции от 66.66% до 100%
+        smallTitleElement.classList.add('excellent'); // Добавляем такой же класс заголовку
+        smallTitleElement.textContent = "Высокий рейтинг"; // Устанавливаем текст для "excellent"
+    }
+}
+
+// Вызываем функцию один раз, чтобы установить начальное положение указателя, классы и текст
+updatePointerPosition();
+
+// Пример: отслеживание изменения значения рейтинга клиента и обновление
+clientRateElement.addEventListener('input', updatePointerPosition); // На случай динамического изменения значения
+
 /*- mobile menu -*/
 const headerCol = document.querySelector('.header__col');
 const menuBtn = document.querySelector('.menu-btn');
